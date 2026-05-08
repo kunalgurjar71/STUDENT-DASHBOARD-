@@ -1,0 +1,195 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(46, 163, 209, 1) 4%,
+    rgba(155, 189, 169, 1) 65%,
+    rgba(222, 209, 98, 1) 100%
+  );
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.top-section {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.top-section > * {
+  flex: 1;
+}
+
+.top-section .card,
+.right-panel {
+  width: 100%;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-panel input {
+  height: 20px;
+  width: 95%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.score-row {
+  display: flex;
+  gap: 10px;
+}
+
+.score-row input {
+  flex: 1;
+}
+
+.score-row button {
+  height: 100%;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.btn-add {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-green {
+  background: #22c55e;
+  color: white;
+  margin: 0 5px;
+}
+
+.btn-yellow {
+  background: #f59e0b;
+  color: white;
+  margin: 0 5px;
+}
+
+.btn-red {
+  background: #ef4444;
+  color: white;
+  margin: 0 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+thead {
+  background: #1e293b;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+tbody tr {
+  background: white;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+tbody tr:hover {
+  background: #f1f5f9;
+}
+
+.pass {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.fail {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.topper {
+  background: #ecfdf5;
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
+
+  .top-section > * {
+    width: 100%;
+  }
+
+  .right-panel {
+    gap: 12px;
+  }
+
+  .score-row {
+    flex-direction: column;
+  }
+
+  .score-row button {
+    width: 100%;
+  }
+}
